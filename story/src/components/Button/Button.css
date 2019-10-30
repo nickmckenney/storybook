@@ -1,0 +1,36 @@
+button{
+
+color:white;
+}
+.button-primary{
+    background-color:#33A0FF;
+    border:blue;
+}
+.button-danger{
+    background-color:#FF4858;
+}
+.button-success{
+    background-color: #0AD00A;
+}
+.button-warning{
+    background-color: #FFC600;
+}
+.button-weewoo{
+    background-color: black;
+}
+.button-cart{
+    background-color: rgb(227,238,254);
+    color:#2E90E5;
+    width:150px;
+    height:46px;
+}
+
+/* .button-large {
+    padding: 10px 50px;
+} */
+button:hover{
+filter: brightness(50%);    
+}
+/* button:hover{
+    opacity: .5;
+} */
