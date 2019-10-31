@@ -58,6 +58,7 @@ storiesOf("Form", module)
       selectsmall
     />
   ))
+  .add("count", () => <Form count />)
   .add("selectFormmed", () => (
     <Form
       placeholder="Select"

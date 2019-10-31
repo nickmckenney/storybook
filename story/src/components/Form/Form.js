@@ -4,6 +4,9 @@ import React, { Component } from "react";
 class Form extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      number: 0
+    };
   }
 
   render() {
@@ -39,6 +42,7 @@ class Form extends React.Component {
             placeholder="Select"
           >
             <option>Select</option>
+            {/* https://codepen.io/mckenney/pen/rNNYKRO?editors=1000 */}
           </select>
         </form>
       );
@@ -53,6 +57,7 @@ class Form extends React.Component {
             placeholder="Select"
           >
             <option>Select</option>
+            {/* https://codepen.io/mckenney/pen/rNNYKRO?editors=1000 */}
           </select>
         </form>
       );
@@ -67,6 +72,7 @@ class Form extends React.Component {
             placeholder="Select"
           >
             <option>Select</option>
+            {/* https://codepen.io/mckenney/pen/rNNYKRO?editors=1000 */}
           </select>
         </form>
       );
@@ -94,9 +100,15 @@ class Form extends React.Component {
             value="Select"
             placeholder="Select"
           >
-            {" "}
             <option>Select</option>
           </select>
+        </form>
+      );
+    }
+    if (this.props.count) {
+      return (
+        <form>
+          <h2>a</h2>
         </form>
       );
     }
