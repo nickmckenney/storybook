@@ -1,5 +1,8 @@
 button{
-
+text-align: center;
+/* padding: 5px; */
+width:150px;
+height:46px;
 color:white;
 }
 .button-primary{
@@ -8,28 +11,86 @@ color:white;
 }
 .button-danger{
     background-color:#FF4858;
+    border:#FF4858
 }
 .button-success{
     background-color: #0AD00A;
+    border:#0AD00A;
 }
 .button-warning{
     background-color: #FFC600;
+    border: #FFC600;
 }
 .button-weewoo{
     background-color: black;
+    border:black;
 }
-.button-cart{
-    background-color: rgb(227,238,254);
-    color:#2E90E5;
-    width:150px;
-    height:46px;
+.cart{
+    position: relative;
+    right: 88px;
+    margin: 0 auto;
+    padding-left: 5px;
 }
 
-/* .button-large {
-    padding: 10px 50px;
-} */
+.button-cart{
+    background-color: rgb(227,238,254);
+    color: #2E90E5;
+    border: #2E90E5;
+    padding-left: 29px;
+    height: 28px;
+    top: 3px;
+    width: 117px;
+    background-repeat: no-repeat;
+}
+
+.button-large {
+  width:171px;
+  height:61px;
+}
+.button-primary-hollow{
+    background-color:white;
+    color:blue;
+    border:2px solid blue;
+}
+.button-danger-hollow{
+    background-color:white;
+    color:red;
+    border:2px solid red;
+}
+.button-success-hollow{
+    background-color:white;
+    color:green;
+    border:2px solid green;
+}
+.button-weewoo-hollow{
+    background-color:white;
+    color:black;
+    border:2px solid black;
+}
+
+.button-warning-hollow{
+    background-color:white;
+    color:#FFC600;
+    border:2px solid #FFC600;
+}
 button:hover{
 filter: brightness(50%);    
+}
+.button-primary-opacity{
+    background-color: rgba(51,160,255,0.1);
+    color:blue;
+}
+.button-danger-opacity{
+    background-color: rgba(255, 72, 88, 0.1);    color:red;
+}
+.button-success-opacity{
+    background-color: rgba(10, 208, 10, 0.1);    color:green;
+}
+.button-warning-opacity{
+    background-color: rgba(255, 198, 0, 0.1);    color:orange
+}
+.button-weewoo-opacity{
+    background-color: rgba(34, 38, 42, 0.1);    color:black;
 }
 /* button:hover{
     opacity: .5;

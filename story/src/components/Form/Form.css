@@ -1,0 +1,11 @@
+form{
+    text-align: left;
+    /* padding: 5px; */
+    width:300px;
+    height:51px;
+    color:white;
+    }
+    .form-email{
+        background-color:#33A0FF;
+        border:blue;
+    }
