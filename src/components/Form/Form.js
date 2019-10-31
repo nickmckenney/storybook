@@ -14,19 +14,14 @@ class Form extends React.Component {
       return (
         <form>
           <h2>Email:</h2>
-          <input type="input" value="Email" placeholder="Email" />
+          <input value={this.props.label} />
         </form>
       );
     }
     if (this.props.select) {
       return (
         <form>
-          <select
-            className="minimal"
-            type="input"
-            value="Select"
-            placeholder="Select"
-          >
+          <select className={this.props.className}>
             <option>Select</option>
           </select>
         </form>
@@ -35,12 +30,7 @@ class Form extends React.Component {
     if (this.props.opacity) {
       return (
         <form>
-          <select
-            className="opacity minimal"
-            type="input"
-            value="Select"
-            placeholder="Select"
-          >
+          <select className={this.props.className}>
             <option>Select</option>
             {/* https://codepen.io/mckenney/pen/rNNYKRO?editors=1000 */}
           </select>
@@ -50,12 +40,7 @@ class Form extends React.Component {
     if (this.props.opacitysmall) {
       return (
         <form>
-          <select
-            className="opacity small"
-            type="input"
-            value="Select"
-            placeholder="Select"
-          >
+          <select className={this.props.className}>
             <option>Select</option>
             {/* https://codepen.io/mckenney/pen/rNNYKRO?editors=1000 */}
           </select>
@@ -65,12 +50,7 @@ class Form extends React.Component {
     if (this.props.opacitymed) {
       return (
         <form>
-          <select
-            className="opacity med"
-            type="input"
-            value="Select"
-            placeholder="Select"
-          >
+          <select className={this.props.className}>
             <option>Select</option>
             {/* https://codepen.io/mckenney/pen/rNNYKRO?editors=1000 */}
           </select>
@@ -80,12 +60,7 @@ class Form extends React.Component {
     if (this.props.selectsmall) {
       return (
         <form>
-          <select
-            className="small"
-            type="input"
-            value="Select"
-            placeholder="Select"
-          >
+          <select className={this.props.className}>
             <option>Select</option>
           </select>
         </form>
@@ -94,12 +69,7 @@ class Form extends React.Component {
     if (this.props.selectmed) {
       return (
         <form>
-          <select
-            className="med"
-            type="input"
-            value="Select"
-            placeholder="Select"
-          >
+          <select className={this.props.className}>
             <option>Select</option>
           </select>
         </form>
@@ -114,5 +84,4 @@ class Form extends React.Component {
     }
   }
 }
-
 export default Form;

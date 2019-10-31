@@ -4,13 +4,7 @@ import Form from "./Form";
 
 storiesOf("Form", module)
   .add("emailForm", () => (
-    <Form
-      placeholder="email"
-      type="input"
-      label="email"
-      value="email"
-      inputEmail
-    />
+    <Form placeholder="email" type="input" label="Email" value="" inputEmail />
   ))
   .add("selectForm", () => (
     <Form
@@ -18,15 +12,17 @@ storiesOf("Form", module)
       //    type="input"
       label="select"
       value="select"
+      className="minimal"
       select
     />
   ))
   .add("selectFormOpacity1", () => (
     <Form
       placeholder="Select"
-      //    type="input"
       label="select"
       value="select"
+      type="input"
+      className="opacity minimal"
       opacity
     />
   ))
@@ -34,8 +30,9 @@ storiesOf("Form", module)
   .add("selectFormOpacityMed", () => (
     <Form
       placeholder="Select"
-      //    type="input"
+      className="opacity med"
       label="select"
+      type="input"
       value="select"
       opacitymed
     />
@@ -43,16 +40,17 @@ storiesOf("Form", module)
   .add("selectFormOpacitySmall", () => (
     <Form
       placeholder="Select"
-      //    type="input"
+      className="opacity small"
       label="select"
+      type="input"
       value="select"
       opacitysmall
     />
   ))
   .add("selectFormsmall", () => (
     <Form
+      className="small"
       placeholder="Select"
-      //    type="input"
       label="select"
       value="select"
       selectsmall
@@ -62,9 +60,10 @@ storiesOf("Form", module)
   .add("selectFormmed", () => (
     <Form
       placeholder="Select"
-      //    type="input"
       label="select"
+      type="input"
       value="select"
+      className="med"
       selectmed
     />
   ));

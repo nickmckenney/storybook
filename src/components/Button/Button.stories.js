@@ -10,11 +10,10 @@ storiesOf("Button", module)
   .add("WeeWoo", () => <Button label="Do Some" type="weewoo" />)
 
   .add("AddToCart", () => <Button label="Add To Cart" type="cart" cart />)
-  .add("Primaryhollow", () => <Button label="Do Some" type="primary" hollow />)
 
+  .add("Primaryhollow", () => <Button label="Do Some" type="primary" hollow />)
   .add("Dangerhollow", () => <Button label="Do Some" type="danger" hollow />)
   .add("Successhollow", () => <Button label="Do Some" type="success" hollow />)
-
   .add("Warninghollow", () => <Button label="Do Some" type="warning" hollow />)
   .add("WeeWoohollow", () => <Button label="Do Some" type="weewoo" hollow />)
 

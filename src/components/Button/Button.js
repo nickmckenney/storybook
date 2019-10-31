@@ -33,11 +33,6 @@ const Button = props => {
       </button>
     );
   }
-  //    if(props.heart){
-  //     return <button className={classList}>
-  //     {props.label}
-  //     <img className="cart"src={logo}></img>
-  // </button>    }
 
   return <button className={classList}>{props.label}</button>;
 };
