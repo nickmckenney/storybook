@@ -56,6 +56,16 @@ storiesOf("Form", module)
       select
     />
   ))
+  .add("selectFormmed", () => (
+    <Form
+      placeholder="Select"
+      label="select"
+      type="input"
+      value="select"
+      className="med"
+      select
+    />
+  ))
   .add("Counter", () => (
     <Form
       type="button"
@@ -68,14 +78,6 @@ storiesOf("Form", module)
       counter
     />
   ))
-
-  .add("selectFormmed", () => (
-    <Form
-      placeholder="Select"
-      label="select"
-      type="input"
-      value="select"
-      className="med"
-      select
-    />
+  .add("Volucher", () => (
+    <Form type="button" placeholder="Volucher Code" volucher />
   ));

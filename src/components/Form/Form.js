@@ -7,18 +7,19 @@ class Form extends React.Component {
     this.state = {
       value: this.props.value
     };
-    // this.handleClick = this.handleClick.bind(this);
-    // this.add = this.add.bind(this);
-    // this.minus = this.add.minus(this);
   }
-  add() {
-    return this.setState({ value: this.state.value + this.props.step });
-  }
-
-  minus() {
-    return this.setState({ value: this.state.value - this.props.step });
-  }
-
+  add = evt => {
+    evt.preventDefault();
+    if (this.state.value < this.props.max) {
+      return this.setState({ value: this.state.value + this.props.step });
+    }
+  };
+  minus = evt => {
+    evt.preventDefault();
+    if (this.state.value > this.props.min) {
+      return this.setState({ value: this.state.value - this.props.step });
+    }
+  };
   render() {
     if (this.props.inputEmail) {
       return (
@@ -53,6 +54,14 @@ class Form extends React.Component {
           <button onClick={this.minus}></button>
           <h2>{this.state.value}</h2>
           <button onClick={this.add}></button>
+        </form>
+      );
+    }
+    if (this.props.volucher) {
+      return (
+        <form>
+          <input className="volutchF" placeholder={this.props.placeholder} />
+          <button className="voluchBtn">Redeme</button>
         </form>
       );
     }
