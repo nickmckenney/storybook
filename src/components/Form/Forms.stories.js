@@ -34,7 +34,7 @@ storiesOf("Form", module)
       label="select"
       type="input"
       value="select"
-      opacitymed
+      opacity
     />
   ))
   .add("selectFormOpacitySmall", () => (
@@ -44,7 +44,7 @@ storiesOf("Form", module)
       label="select"
       type="input"
       value="select"
-      opacitysmall
+      opacity
     />
   ))
   .add("selectFormsmall", () => (
@@ -53,10 +53,22 @@ storiesOf("Form", module)
       placeholder="Select"
       label="select"
       value="select"
-      selectsmall
+      select
     />
   ))
-  .add("count", () => <Form count />)
+  .add("Counter", () => (
+    <Form
+      type="button"
+      value={2}
+      plus="+"
+      minus="-"
+      max={10}
+      min={0}
+      step={2}
+      counter
+    />
+  ))
+
   .add("selectFormmed", () => (
     <Form
       placeholder="Select"
@@ -64,6 +76,6 @@ storiesOf("Form", module)
       type="input"
       value="select"
       className="med"
-      selectmed
+      select
     />
   ));

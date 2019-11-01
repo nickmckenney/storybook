@@ -5,8 +5,18 @@ class Form extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      number: 0
+      value: this.props.value
     };
+    // this.handleClick = this.handleClick.bind(this);
+    // this.add = this.add.bind(this);
+    // this.minus = this.add.minus(this);
+  }
+  add() {
+    return this.setState({ value: this.state.value + this.props.step });
+  }
+
+  minus() {
+    return this.setState({ value: this.state.value - this.props.step });
   }
 
   render() {
@@ -37,51 +47,16 @@ class Form extends React.Component {
         </form>
       );
     }
-    if (this.props.opacitysmall) {
+    if (this.props.counter) {
       return (
         <form>
-          <select className={this.props.className}>
-            <option>Select</option>
-            {/* https://codepen.io/mckenney/pen/rNNYKRO?editors=1000 */}
-          </select>
-        </form>
-      );
-    }
-    if (this.props.opacitymed) {
-      return (
-        <form>
-          <select className={this.props.className}>
-            <option>Select</option>
-            {/* https://codepen.io/mckenney/pen/rNNYKRO?editors=1000 */}
-          </select>
-        </form>
-      );
-    }
-    if (this.props.selectsmall) {
-      return (
-        <form>
-          <select className={this.props.className}>
-            <option>Select</option>
-          </select>
-        </form>
-      );
-    }
-    if (this.props.selectmed) {
-      return (
-        <form>
-          <select className={this.props.className}>
-            <option>Select</option>
-          </select>
-        </form>
-      );
-    }
-    if (this.props.count) {
-      return (
-        <form>
-          <h2>a</h2>
+          <button onClick={this.minus}></button>
+          <h2>{this.state.value}</h2>
+          <button onClick={this.add}></button>
         </form>
       );
     }
   }
 }
+
 export default Form;

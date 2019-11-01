@@ -25,6 +25,10 @@ button {
   background-color: black;
   border: black;
 }
+.cnt {
+  width: 20px;
+  color: black;
+}
 .cart {
   position: relative;
   right: 88px;
