@@ -1,0 +1,22 @@
+.imgProductName {
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e5e8ea;
+  width: 270px;
+  padding-top: 10px;
+  height: 350px;
+
+  /* align-content: center; */
+  /* justify-content: center; */
+  /* justify-items: center; */
+  /* align-self: center; */
+}
+.imgPrice {
+  padding-top: 60px;
+}
+.imgRating {
+  padding-top: 20px;
+}
