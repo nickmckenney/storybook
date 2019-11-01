@@ -3,11 +3,11 @@ import ReactDOM from "react-dom";
 import Thumb from "./Thumbnail.js";
 import "./thumb.css";
 import "./Thumbnail.stories.js";
-import cart from "./Cart.png";
-import Heart from "./Heart.png";
+import cart from "./bluecart.png";
+import Heart from "./Ellipse 2.png";
 import img from "./computerImg.png";
 
-class Computer2 extends Component {
+class Computer3 extends Component {
   constructor(props) {
     super(props);
   }
@@ -21,4 +21,4 @@ class Computer2 extends Component {
     );
   }
 }
-export default Computer2;
+export default Computer3;

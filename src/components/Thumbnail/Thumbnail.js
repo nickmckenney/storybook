@@ -2,7 +2,7 @@ import "./thumb.css";
 import React, { Component } from "react";
 import Computer from "./ComputerImg.js";
 import Computer2 from "./Computer2.js";
-
+import Computer3 from "./Computer3.js";
 import Ratings from "./Ratings.js";
 import Price from "./Price.js";
 import "./thumb.css";
@@ -24,20 +24,38 @@ class Nail extends React.Component {
     this.setState({ mouseEnter: false });
   };
   render() {
-    return (
-      <div>
-        <form
-          className="container"
-          onMouseEnter={this.mouseEnter}
-          onMouseLeave={this.mouseLeave}
-        >
-          <div>{this.state.mouseEnter ? <Computer2 /> : <Computer />}</div>
-          <ProductName />
-          <Ratings />
-          <Price />
-        </form>
-      </div>
-    );
+    if (this.props.color) {
+      return (
+        <div>
+          <form
+            className="container"
+            onMouseEnter={this.mouseEnter}
+            onMouseLeave={this.mouseLeave}
+          >
+            <div>{this.state.mouseEnter ? <Computer3 /> : <Computer />}</div>
+            <ProductName />
+            <Ratings />
+            <Price />
+          </form>
+        </div>
+      );
+    }
+    if (this.props.notColor) {
+      return (
+        <div>
+          <form
+            className="container"
+            onMouseEnter={this.mouseEnter}
+            onMouseLeave={this.mouseLeave}
+          >
+            <div>{this.state.mouseEnter ? <Computer2 /> : <Computer />}</div>
+            <ProductName />
+            <Ratings />
+            <Price />
+          </form>
+        </div>
+      );
+    }
   }
 }
 export default Nail;

@@ -8,15 +8,37 @@
   width: 270px;
   padding-top: 10px;
   height: 350px;
-
-  /* align-content: center; */
-  /* justify-content: center; */
-  /* justify-items: center; */
-  /* align-self: center; */
 }
+
 .imgPrice {
   padding-top: 60px;
 }
 .imgRating {
   padding-top: 20px;
+}
+.hi {
+  opacity: 0.1;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+}
+.carty {
+  position: absolute;
+  left: 13%;
+  top: 65px;
+  padding: 0px;
+  width: 40px;
+
+  margin: 0px;
+  /* width: 10px; */
+}
+.hearty {
+  position: absolute;
+  left: 19%;
+  top: 65px;
+  padding: 0px;
+  width: 40px;
+
+  margin: 0px;
+  /* width: 10px; */
 }

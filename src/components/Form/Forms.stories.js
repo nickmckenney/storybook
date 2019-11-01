@@ -9,7 +9,6 @@ storiesOf("Form", module)
   .add("selectForm", () => (
     <Form
       placeholder="Select"
-      //    type="input"
       label="select"
       value="select"
       className="minimal"
